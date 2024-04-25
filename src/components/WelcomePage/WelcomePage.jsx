@@ -7,6 +7,7 @@ const WelcomePage = () => {
     <div>
         <Banner></Banner>
         <CardSection></CardSection>
+        <img src="../../../public/Photos/lv_0_20240426023016.gif" alt="" />
     </div>
     
   )

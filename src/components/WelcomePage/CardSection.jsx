@@ -9,15 +9,30 @@ import SvgIcon from '@mui/joy/SvgIcon';
 import Lottie from 'lottie-react';
 import RocketLottie from '../../../public/Photos/Animation - 1714071392465.json'
 
+
+import "./CardSection.css";
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { useEffect } from "react";
+
 const CardSection = () => {
+
+    const count = useMotionValue(0);
+    const rounded = useTransform(count, Math.round);
+
+    useEffect(() => {
+        const animation = animate(count, 100, { duration: 10 });
+
+        return animation.stop;
+    }, []);
+
     return (
         <div className='flex justify-around items-center'>
             <div className=' flex justify-center items-center '>
                 <Lottie className='h-56 w-56' animationData={RocketLottie}></Lottie>
                 <h1 className=' text-5xl'>Boost Your <br /> Productivity</h1>
             </div>
-            
-            <Card sx={{minWidth:400}} variant="solid" color="primary" invertedColors>
+
+            <Card sx={{ minWidth: 400 }} variant="solid" color="primary" invertedColors>
                 <CardContent orientation="horizontal">
                     <CircularProgress color='primary' size="lg" determinate value={20}>
                         <SvgIcon>
@@ -38,7 +53,7 @@ const CardSection = () => {
                     </CircularProgress>
                     <CardContent>
                         <Typography color='white' level="body-md">Gross profit</Typography>
-                        <Typography color='white' level="h2">$ 432.6M</Typography>
+                        <Typography color='white' level="h3">$ <motion.h3 className='inline-block'>{rounded}</motion.h3>M</Typography>
                     </CardContent>
                 </CardContent>
                 <CardActions>
@@ -50,6 +65,7 @@ const CardSection = () => {
                     </Button>
                 </CardActions>
             </Card>
+            
         </div>
     )
 }
