@@ -6,14 +6,18 @@ import CardActions from '@mui/joy/CardActions';
 import CircularProgress from '@mui/joy/CircularProgress';
 import Typography from '@mui/joy/Typography';
 import SvgIcon from '@mui/joy/SvgIcon';
+import Lottie from 'lottie-react';
+import RocketLottie from '../../../public/Photos/Animation - 1714071392465.json'
 
 const CardSection = () => {
     return (
-        <div>
-            <div>
-                <h1>Boost Your Productivity</h1>
+        <div className='flex justify-around items-center'>
+            <div className=' flex justify-center items-center '>
+                <Lottie className='h-56 w-56' animationData={RocketLottie}></Lottie>
+                <h1 className=' text-5xl'>Boost Your <br /> Productivity</h1>
             </div>
-            <Card sx={{maxWidth:400}} variant="solid" color="primary" invertedColors>
+            
+            <Card sx={{minWidth:400}} variant="solid" color="primary" invertedColors>
                 <CardContent orientation="horizontal">
                     <CircularProgress color='primary' size="lg" determinate value={20}>
                         <SvgIcon>
