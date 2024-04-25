@@ -10,9 +10,12 @@ import SvgIcon from '@mui/joy/SvgIcon';
 const CardSection = () => {
     return (
         <div>
-            <Card variant="solid" color="primary" invertedColors>
+            <div>
+                <h1>Boost Your Productivity</h1>
+            </div>
+            <Card sx={{maxWidth:400}} variant="solid" color="primary" invertedColors>
                 <CardContent orientation="horizontal">
-                    <CircularProgress size="lg" determinate value={20}>
+                    <CircularProgress color='primary' size="lg" determinate value={20}>
                         <SvgIcon>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -30,8 +33,8 @@ const CardSection = () => {
                         </SvgIcon>
                     </CircularProgress>
                     <CardContent>
-                        <Typography level="body-md">Gross profit</Typography>
-                        <Typography level="h2">$ 432.6M</Typography>
+                        <Typography color='white' level="body-md">Gross profit</Typography>
+                        <Typography color='white' level="h2">$ 432.6M</Typography>
                     </CardContent>
                 </CardContent>
                 <CardActions>
