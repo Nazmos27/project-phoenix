@@ -14,19 +14,28 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function Banner() {
   return (
-    <div className='flex justify-center items-center'>
-        <div>Hello</div>
+    <div className='flex justify-center items-center px-10'>
+        <div>
+            <ul className='list-disc'>
+                <li>Track your class-time easily</li>
+                <li>Get real time feedback on your performance</li>
+                <li>Manage your daily goal</li>
+            </ul>
+        </div>
         <>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
+        speed={1000}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
         }}
+        loop={true}
         pagination={{
           clickable: true,
         }}
+        
         // navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
@@ -38,7 +47,13 @@ export default function Banner() {
         
       </Swiper>
     </>
-        <div>World</div>
+        <div>
+            <ul className='list-disc '>
+                <li>Get real time class update</li>
+                <li>Easy to use and manage system</li>
+                <li>All  in one place for all your needs</li>
+            </ul>
+        </div>
     </div>
   );
 }
