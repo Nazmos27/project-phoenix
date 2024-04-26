@@ -13,6 +13,7 @@ import RocketLottie from '../../../public/Photos/Animation - 1714071392465.json'
 import "./CardSection.css";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect } from "react";
+import CustomCard from './Cards/CustomCard';
 
 const CardSection = () => {
 
@@ -26,7 +27,8 @@ const CardSection = () => {
     }, []);
 
     return (
-        <div className='flex justify-around items-center'>
+        <div>
+            <div className='flex justify-around items-center'>
             <div className=' flex justify-center items-center '>
                 <Lottie className='h-56 w-56' animationData={RocketLottie}></Lottie>
                 <h1 className=' text-5xl'>Boost Your <br /> Productivity</h1>
@@ -66,6 +68,10 @@ const CardSection = () => {
                 </CardActions>
             </Card>
             
+        </div>
+        <div>
+            <CustomCard></CustomCard>
+        </div>
         </div>
     )
 }
