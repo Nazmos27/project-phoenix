@@ -69,7 +69,13 @@ const CardSection = () => {
             </Card>
             
         </div>
-        <div>
+        <div className='flex m-10'>
+            <div className='flex justify-center items-center w-1/2 bg-[#FBFBFB]'>
+                <img className='h-40 w-40' src="../../../public/Photos/final.gif" alt="" />
+                <p className='text-5xl'>
+                    Time is <br /> "Running"...
+                </p>
+            </div>
             <CustomCard></CustomCard>
         </div>
         </div>
