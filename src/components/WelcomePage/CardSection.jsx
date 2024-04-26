@@ -71,8 +71,8 @@ const CardSection = () => {
         </div>
         <div className='flex m-10'>
             <div className='flex justify-center items-center w-1/2 bg-[#FBFBFB]'>
-                <img className='h-40 w-40' src="../../../public/Photos/final.gif" alt="" />
-                <p className='text-5xl'>
+                <img className='h-60 w-60' src="../../../public/Photos/final.gif" alt="" />
+                <p className='text-5xl mt-8'>
                     Time is <br /> "Running"...
                 </p>
             </div>
