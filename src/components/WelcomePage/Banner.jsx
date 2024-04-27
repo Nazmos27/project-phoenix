@@ -7,6 +7,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+import TimelineIcon from '@mui/icons-material/Timeline';
+
 import './Banner.css';
 
 // import required modules
@@ -16,10 +18,14 @@ export default function Banner() {
   return (
     <div className='flex justify-center items-center px-10'>
         <div>
-            <ul className='list-disc'>
-                <li>Track your class-time easily</li>
-                <li>Get real time feedback on your performance</li>
-                <li>Manage your daily goal</li>
+            <ul className='space-y-4'>
+                <li className='flex gap-3 px-4 justify-start items-center h-12 text-center py-3 w-[330px] shadow-2xl rounded-lg'>
+                  <img src="../../../public/Photos/bannerIcon/locationprivacy-svgrepo-com.svg" className='h-10 w-10' alt="" />Track your class-time easily</li>
+                <li className='flex gap-3 px-4 justify-start items-center h-12 text-center py-3 w-[330px] shadow-2xl rounded-lg'>
+                <img src="../../../public/Photos/bannerIcon/checklist-svgrepo-com.svg" className='h-10 w-10' alt="" />
+Manage your daily tasks</li>
+                <li className='flex gap-3 px-4 justify-start items-center h-12 text-center py-3 w-[350px] shadow-2xl rounded-lg'>
+                <img src="../../../public/Photos/bannerIcon/markushiexpensemanager-svgrepo-com.svg" className='h-10 w-10' alt="" />Improve your academic performance</li>
             </ul>
         </div>
         <>
@@ -48,12 +54,27 @@ export default function Banner() {
       </Swiper>
     </>
         <div>
-            <ul className='list-disc '>
-                <li>Get real time class update</li>
-                <li>Easy to use and manage system</li>
-                <li>All  in one place for all your needs</li>
+        <ul className='space-y-4'>
+                <li className='flex gap-3 px-4 justify-start items-center  h-12 text-center py-3 w-[330px] shadow-2xl rounded-lg'>
+                <img src="../../../public/Photos/bannerIcon/simple-time-tracker-svgrepo-com.svg" className='h-10 w-10' alt="" />Get real time class update</li>
+                <li className='flex gap-3 px-4 justify-start items-center h-12 text-center py-3 w-[330px] shadow-2xl rounded-lg'>
+                <img src="../../../public/Photos/bannerIcon/everyday-tasks-svgrepo-com.svg" className='h-10 w-10' alt="" />
+                Easy to use and manage system</li>
+                <li className='flex gap-3 px-4 justify-start items-center h-12 text-center py-3 w-[330px] shadow-2xl rounded-lg'>
+                <img src="../../../public/Photos/bannerIcon/trophy-cup-svgrepo-com.svg" className='h-10 w-10' alt="" />All  in one place for all your needs</li>
             </ul>
         </div>
     </div>
   );
 }
+
+
+
+
+
+
+
+                  
+                  
+                  
+                  

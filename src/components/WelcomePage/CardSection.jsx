@@ -28,56 +28,57 @@ const CardSection = () => {
 
     return (
         <div>
+            <div className='flex m-10'>
+                <div className='flex justify-center items-center w-1/2 bg-[#FBFBFB]'>
+                    <img className='h-60 w-60' src="../../../public/Photos/final.gif" alt="" />
+                    <p className='text-5xl mt-8'>
+                        Time is <br /> "Running"...
+                    </p>
+                </div>
+                <CustomCard></CustomCard>
+            </div>
             <div className='flex justify-around items-center'>
-            <div className=' flex justify-center items-center '>
-                <Lottie className='h-56 w-56' animationData={RocketLottie}></Lottie>
-                <h1 className=' text-5xl'>Boost Your <br /> Productivity</h1>
-            </div>
+                <div className=' flex justify-center items-center '>
+                    <Lottie className='h-56 w-56' animationData={RocketLottie}></Lottie>
+                    <h1 className=' text-5xl'>Boost Your <br /> Productivity</h1>
+                </div>
 
-            <Card sx={{ minWidth: 400 }} variant="solid" color="primary" invertedColors>
-                <CardContent orientation="horizontal">
-                    <CircularProgress color='primary' size="lg" determinate value={20}>
-                        <SvgIcon>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                strokeWidth={1.5}
-                                stroke="currentColor"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
-                                />
-                            </svg>
-                        </SvgIcon>
-                    </CircularProgress>
-                    <CardContent>
-                        <Typography color='white' level="body-md">Gross profit</Typography>
-                        <Typography color='white' level="h3">$ <motion.h3 className='inline-block'>{rounded}</motion.h3>M</Typography>
+                <Card sx={{ minWidth: 400 }} variant="solid" color="primary" invertedColors>
+                    <CardContent orientation="horizontal">
+                        <CircularProgress color='primary' size="lg" determinate value={20}>
+                            <SvgIcon>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth={1.5}
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
+                                    />
+                                </svg>
+                            </SvgIcon>
+                        </CircularProgress>
+                        <CardContent>
+                            <Typography color='white' level="body-md">Gross profit</Typography>
+                            <Typography color='white' level="h3">$ <motion.h3 className='inline-block'>{rounded}</motion.h3>M</Typography>
+                        </CardContent>
                     </CardContent>
-                </CardContent>
-                <CardActions>
-                    <Button variant="soft" size="sm">
-                        Add to Watchlist
-                    </Button>
-                    <Button variant="solid" size="sm">
-                        See breakdown
-                    </Button>
-                </CardActions>
-            </Card>
-            
-        </div>
-        <div className='flex m-10'>
-            <div className='flex justify-center items-center w-1/2 bg-[#FBFBFB]'>
-                <img className='h-60 w-60' src="../../../public/Photos/final.gif" alt="" />
-                <p className='text-5xl mt-8'>
-                    Time is <br /> "Running"...
-                </p>
+                    <CardActions>
+                        <Button variant="soft" size="sm">
+                            Add to Watchlist
+                        </Button>
+                        <Button variant="solid" size="sm">
+                            See breakdown
+                        </Button>
+                    </CardActions>
+                </Card>
+
             </div>
-            <CustomCard></CustomCard>
-        </div>
+            
         </div>
     )
 }
