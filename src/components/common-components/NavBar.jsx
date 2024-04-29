@@ -5,6 +5,11 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { useMediaQuery } from '@mui/material';
+
+
+
+
 
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -34,15 +39,17 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
       opacity: 0,
     },
   },
+  
 }));
 
 
 const NavBar = () => {
   return (
-    <div>
-      <div className='flex justify-between px-7 items-center my-10'>
-        <div className="bg-cover bg-center h-16 w-60" style={{ backgroundImage: `url("../../../public/Photos/Untitled_design-removebg-preview.svg")`}}></div>
-        <ul className='flex justify-between items-center pr-40'>
+    <div className='64'>
+      <div className='flex md:justify-between justify-center  px-7 items-center my-10'>
+        {/* <div className="bg-cover bg-center md:h-16 md:w-60 h-10 w-40" style={{ backgroundImage: `url("../../../public/Photos/Untitled_design-removebg-preview.svg")`}}></div> */}
+        <img src="../../../public/Photos/Untitled_design-removebg-preview.svg" className='md:h-16 md:w-60 h-64 w-96' alt="" />
+        <ul className='md:flex justify-between items-center md:pr-40 hidden'>
           <li className='h-10 w-20 hover:bg-slate-400 bg-slate-50 rounded-md mx-2 p-2 text-center'><Link  to="/">Home</Link></li>
           <li className='h-10 w-20 hover:bg-slate-400 bg-slate-50 rounded-md mx-2 p-2 text-center'><Link  to="/routine">Routine</Link></li>
           <li className='h-10 w-20 hover:bg-slate-400 bg-slate-50 rounded-md mx-2 p-2 text-center'><Link  to="/notice">Notice</Link></li>
@@ -54,7 +61,7 @@ const NavBar = () => {
           anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
           variant="dot"
         >
-          <Avatar alt="Nazmos Sakib" src="../../../public/Photos/Opera Snapshot_2024-04-25_130053_www.facebook.com.png" />
+          <Avatar sx={{height:100,width:100}} alt="Nazmos Sakib" src="../../../public/Photos/Opera Snapshot_2024-04-25_130053_www.facebook.com.png" />
         </StyledBadge>
       </div>
     </div>
@@ -62,3 +69,4 @@ const NavBar = () => {
 }
 
 export default NavBar
+
