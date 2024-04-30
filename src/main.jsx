@@ -15,7 +15,7 @@ import WelcomePage from './components/WelcomePage/WelcomePage.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
+    element: <App></App>,
     children:[
       {
         path: "/",

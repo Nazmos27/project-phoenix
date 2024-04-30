@@ -1,9 +1,9 @@
 import Lottie from 'lottie-react'
 import React from 'react'
-import BlueStudent1 from '../../../../public/Photos/Animation - 1714147521435.json'
-import BlueStudent2 from '../../../../public/Photos/Animation - 1714114756194.json'
-import YellowStudent from '../../../../public/Photos/Animation - 1714114686415.json'
-import FemaleStudent from '../../../../public/Photos/Animation - 1714117874892.json'
+import BlueStudent1 from '/public/Photos/Animation - 1714147521435.json'
+import BlueStudent2 from '/public/Photos/Animation - 1714114756194.json'
+import YellowStudent from '/public/Photos/Animation - 1714114686415.json'
+import FemaleStudent from '/public/Photos/Animation - 1714117874892.json'
 
 const color = '0068FF FADB39 575BB5'
 

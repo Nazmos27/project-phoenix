@@ -7,7 +7,7 @@ import CircularProgress from '@mui/joy/CircularProgress';
 import Typography from '@mui/joy/Typography';
 import SvgIcon from '@mui/joy/SvgIcon';
 import Lottie from 'lottie-react';
-import RocketLottie from '../../../public/Photos/Animation - 1714071392465.json'
+import RocketLottie from '/public/Photos/Animation - 1714071392465.json'
 
 
 import "./CardSection.css";
@@ -30,7 +30,7 @@ const CardSection = () => {
         <div>
             <div className='flex m-10'>
                 <div className='flex justify-center items-center w-1/2 bg-[#FBFBFB]'>
-                    <img className='h-60 w-60' src="../../../public/Photos/final.gif" alt="" />
+                    <img className='h-60 w-60' src="public/Photos/final.gif" alt="" />
                     <p className='text-5xl mt-8'>
                         Time is <br /> "Running"...
                     </p>
