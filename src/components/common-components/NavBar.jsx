@@ -63,7 +63,7 @@ const NavBar = () => {
     <div className='64'>
       <div className='flex md:justify-between justify-around  px-7 items-center my-10'>
         {/* <div className="bg-cover bg-center md:h-16 md:w-60 h-10 w-40" style={{ backgroundImage: `url("public/Photos/Untitled_design-removebg-preview.svg")`}}></div> */}
-        <img src="public/Photos/Untitled_design-removebg-preview.svg" className='md:h-16 md:w-60 h-64 ml-64 w-96' alt="" />
+        <img src="public/Photos/Untitled_design-removebg-preview.svg" className='md:h-16 md:w-60 h-64 ml-40 w-96' alt="" />
         <ul className='md:flex justify-between items-center md:pr-40 hidden'>
           <li className='h-10 w-20 hover:bg-slate-400 bg-slate-50 rounded-md mx-2 p-2 text-center'><Link  to="/">Home</Link></li>
           <li className='h-10 w-20 hover:bg-slate-400 bg-slate-50 rounded-md mx-2 p-2 text-center'><Link  to="/routine">Routine</Link></li>
