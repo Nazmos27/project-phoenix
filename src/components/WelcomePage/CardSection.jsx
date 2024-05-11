@@ -28,10 +28,10 @@ const CardSection = () => {
 
     return (
         <div>
-            <div className='flex m-10'>
+            <div className='flex flex-col md:flex-row m-2'>
                 <div className='flex justify-center items-center w-1/2 bg-[#FBFBFB]'>
-                    <img className='h-60 w-60' src="public/Photos/final.gif" alt="" />
-                    <p className='text-5xl mt-8'>
+                    <img className='h-56 w-56' src="public/Photos/final.gif" alt="" />
+                    <p className='text-4xl mt-8'>
                         Time is <br /> "Running"...
                     </p>
                 </div>
@@ -40,10 +40,10 @@ const CardSection = () => {
             <div className='flex justify-around items-center'>
                 <div className=' flex justify-center items-center '>
                     <Lottie className='h-56 w-56' animationData={RocketLottie}></Lottie>
-                    <h1 className=' text-5xl'>Boost Your <br /> Productivity</h1>
+                    <h1 className=' text-xl'>Boost Your <br /> Productivity</h1>
                 </div>
 
-                <Card sx={{ minWidth: 400 }} variant="solid" color="primary" invertedColors>
+                {/* <Card sx={{ minWidth: 400 }} variant="solid" color="primary" invertedColors>
                     <CardContent orientation="horizontal">
                         <CircularProgress color='primary' size="lg" determinate value={20}>
                             <SvgIcon>
@@ -75,7 +75,7 @@ const CardSection = () => {
                             See breakdown
                         </Button>
                     </CardActions>
-                </Card>
+                </Card> */}
 
             </div>
             

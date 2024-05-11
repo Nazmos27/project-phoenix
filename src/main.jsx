@@ -10,6 +10,7 @@ import Home from './components/common-components/Home.jsx';
 import RoutinePage from './components/RoutinePage/RoutinePage.jsx';
 import NoticePage from './components/NoticePage/NoticePage.jsx';
 import WelcomePage from './components/WelcomePage/WelcomePage.jsx';
+import { StyledEngineProvider } from '@mui/material';
 
 
 const router = createBrowserRouter([
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
         element: <WelcomePage></WelcomePage>
       },
       {
-        path: "routine",
+        path: "/routine",
         element: <RoutinePage></RoutinePage>
       },
       {
@@ -35,6 +36,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <StyledEngineProvider injectFirst>
     <RouterProvider router={router} />
+    </StyledEngineProvider>
   </React.StrictMode>,
 )
